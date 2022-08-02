@@ -13,6 +13,13 @@ export default function PrimeNumberService(number) {
     primeGenerator.on("start", mersenne.ifMerssene)
     primeGenerator.on("start", prime1.ifEndWithOne)
     primeGenerator.on("start", primeWithFourDigits.substractFromPrime)
-    
-    primeGenerator.generator()
+
+    const primeNumbers = primeGenerator.generator()
+    const myInterval = setInterval(() => {
+        const value = primeNumbers.next().value
+        if (!value) {
+            clearInterval(myInterval)
+            return
+        }
+    }, 1000);
 }

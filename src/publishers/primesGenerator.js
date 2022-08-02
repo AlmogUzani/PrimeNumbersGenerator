@@ -7,17 +7,13 @@ class Prime extends MyEvent {
         this._firstNumber = 2
         this._limitNumber = limitNumber
     }
-    generator() {
-        let flag = false
-        if (this._firstNumber === this._limitNumber) return
-        if (this.isPrime(this._firstNumber)){
-            this.emit("start",this._firstNumber)
-            console.log(chalk.white(this._firstNumber),'(Prime)')
-            flag = true
+    *generator() {
+        for (let i = this._firstNumber ; i < this._limitNumber ; i++){
+            if (this.isPrime(i)){
+                yield i
+                this.emit('start', i)
+            }
         }
-        this._firstNumber++
-        if(flag) {setTimeout(() => this.generator(), 1000)}
-        else {this.generator()}
     }
     isPrime(num) {
         for (let i = 2, numSqrt = Math.floor(Math.sqrt(num)) ; i <= numSqrt ; i++){
