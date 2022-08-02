@@ -14,5 +14,5 @@ export default function PrimeNumberService(number) {
     primeGenerator.on("start", prime1.ifEndWithOne)
     primeGenerator.on("start", primeWithFourDigits.substractFromPrime)
     
-    for (let number of primeGenerator.generator()){}
+    primeGenerator.generator()
 }
