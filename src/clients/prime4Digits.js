@@ -5,3 +5,5 @@ class PrimeWithFourDigits {
         }
     }
 }
+
+export default PrimeWithFourDigits
