@@ -1,7 +1,6 @@
-import MyEvent from "../common/myEvent.js"
-import chalk from "chalk"
+import EventEmitter from "events"
 
-class Prime extends MyEvent {
+class Prime extends EventEmitter {
     constructor(limitNumber) {
         super()
         this._firstNumber = 2
