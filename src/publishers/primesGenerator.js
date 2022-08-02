@@ -15,3 +15,4 @@ class Prime {
         return num > 1
     }
 }
+export default Prime
