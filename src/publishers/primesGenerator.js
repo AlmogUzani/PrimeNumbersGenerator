@@ -12,7 +12,7 @@ class Prime extends MyEvent {
         if (this._firstNumber === this._limitNumber) return
         if (this.isPrime(this._firstNumber)){
             this.emit("start",this._firstNumber)
-            console.log(chalk.white(this._firstNumber))
+            console.log(chalk.white(this._firstNumber),'(Prime)')
             flag = true
         }
         this._firstNumber++
