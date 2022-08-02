@@ -1,3 +1,4 @@
+import chalk from 'chalk'
 class PrimeWithFourDigits {
     substractFromPrime(PrimeNumber){
         if (PrimeNumber > 999 && PrimeNumber < 10000){
