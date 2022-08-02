@@ -17,5 +17,8 @@
     "url": "https://github.com/AlmogUzani/PrimeNumbersGenerator/issues"
   },
   "homepage": "https://github.com/AlmogUzani/PrimeNumbersGenerator#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  }
 }

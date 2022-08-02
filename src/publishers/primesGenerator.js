@@ -1,11 +1,15 @@
-class Prime {
+import MyEvent from "../common/myEvent.js"
+class Prime extends MyEvent {
     constructor(limitNumber) {
+        super()
         this._firstNumber = 2
         this._limitNumber = limitNumber
     }
     *generator() {
         for (let i = this._firstNumber ; i < this._limitNumber ; i++){
-            if (this.isPrime(i)) {yield i}
+            if (this.isPrime(i)) {
+                yield i
+            }
         }
     }
     isPrime(num) {
