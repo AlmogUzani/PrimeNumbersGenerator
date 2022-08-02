@@ -8,7 +8,7 @@ class Merssene {
             while (pow <= primeNumber + 1){
                 pow = parseInt(Math.pow(2, n))
                 if (pow === primeNumber + 1) {
-                    console.log(chalk.blue(primeNumber), '(Mersenne)')
+                    console.log(chalk.blue(primeNumber, '(Mersenne)'))
                     return true
                 }
                 n++
