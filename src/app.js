@@ -5,7 +5,7 @@ import PrimeWithFourDigits from "./clients/prime4Digits.js";
 
 export default function PrimeNumberService(number) {
 
-    const primeGenerator = new Prime(31)
+    const primeGenerator = new Prime(number)
     const mersenne = new Merssene()
     const prime1 = new EndWithOne()
     const primeWithFourDigits = new PrimeWithFourDigits()

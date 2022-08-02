@@ -1,6 +1,7 @@
+import chalk from "chalk"
 class EndWithOne {
     ifEndWithOne(primeNumber){
-        return primeNumber % 10 === 1
+        if (primeNumber % 10 === 1) console.log(chalk.red(primeNumber))
     }
 }
 

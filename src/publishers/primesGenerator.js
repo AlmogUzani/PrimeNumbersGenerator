@@ -9,6 +9,7 @@ class Prime extends MyEvent {
         for (let i = this._firstNumber ; i < this._limitNumber ; i++){
             if (this.isPrime(i)) {
                 yield i
+                this.emit("start", i)
             }
         }
     }
