@@ -1,3 +1,3 @@
 import PrimeNumberService from "./src/app.js";
 
-PrimeNumberService(1050)
+PrimeNumberService(100)
